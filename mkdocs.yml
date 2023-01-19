@@ -1,0 +1,6 @@
+site_name: Yushakobo License Kit Guide
+copyright: 'Copyright © 2023 遊舎工房'
+
+theme:
+  name: material
+  language: ja
