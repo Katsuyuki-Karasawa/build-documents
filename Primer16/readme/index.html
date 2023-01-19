@@ -1,0 +1,1958 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Navpad_10/formore/readme/">
+      
+      
+        <link rel="next" href="../../Primer79/readme/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
+    
+    
+      
+        <title>Primer16 ビルドガイド - Yushakobo License Kit Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#primer16" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../.." title="Yushakobo License Kit Guide" class="md-header__button md-logo" aria-label="Yushakobo License Kit Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Yushakobo License Kit Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Primer16 ビルドガイド
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Yushakobo License Kit Guide" class="md-nav__button md-logo" aria-label="Yushakobo License Kit Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Yushakobo License Kit Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        License Kit Build Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
+          ErgoDash
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="ErgoDash" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          ErgoDash
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ErgoDash/AluminiumCase/" class="md-nav__link">
+        ErgoDash親指ありアルミニウムケース組み立て説明
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ErgoDash/ErgoDash_BuildGuide/" class="md-nav__link">
+        ErgoDash 親指ありビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ErgoDash/ErgoDash_BuildGuide_cut/" class="md-nav__link">
+        ErgoDash 親指なし ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ErgoDash/ErgoDash_Parts/" class="md-nav__link">
+        ErgoDash必要部品/必要工具
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
+          Navpad 10
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Navpad 10" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Navpad 10
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Navpad_10/readme/" class="md-nav__link">
+        Navpad 1.0 ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" tabindex="0" aria-expanded="false">
+          Formore
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Formore" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Formore
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Navpad_10/formore/acrylic_plate/" class="md-nav__link">
+        Navpad 1.0用『キーボードアクリルプレート』を使用する
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Navpad_10/formore/aluminum_feet/" class="md-nav__link">
+        チルト用 Aluminum feet セットを使用する
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Navpad_10/formore/connect_with/" class="md-nav__link">
+        Navpad 1.0をほかのキーボードと接続する<br />(上級者向けの改造)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Navpad_10/formore/readme/" class="md-nav__link">
+        Navpad 1.0をカスタマイズする
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="true">
+          Primer16
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Primer16" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Primer16
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Primer16 ビルドガイド
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Primer16 ビルドガイド
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    注意事項
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    １．キットに同梱されている部品をチェックする
+  </a>
+  
+    <nav class="md-nav" aria-label="１．キットに同梱されている部品をチェックする">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1" class="md-nav__link">
+    １－１．オプション部品（ロータリーエンコーダ）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2" class="md-nav__link">
+    １－２．オプション部品（アクリルケース）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-3" class="md-nav__link">
+    １－３．オプション部品（無線用部品）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    ２．別途準備するパーツをチェックする
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    必要な道具
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    組み立ての手順
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    1. ダイオードのハンダ付け
+  </a>
+  
+    <nav class="md-nav" aria-label="1. ダイオードのハンダ付け">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1_1" class="md-nav__link">
+    1-1．ダイオードの足を曲げる
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2_1" class="md-nav__link">
+    1-2．基板の穴にダイオードを差し込む
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-3_1" class="md-nav__link">
+    1-3．ダイオードをハンダ付けする
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-4" class="md-nav__link">
+    1-4．余ったダイオードの足をニッパーで切る
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-5" class="md-nav__link">
+    1-5．切り取った断面にハンダごてを当てる
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-promicro13" class="md-nav__link">
+    2. ProMicroとピンヘッダ/13ピンソケットのハンダ付け
+  </a>
+  
+    <nav class="md-nav" aria-label="2. ProMicroとピンヘッダ/13ピンソケットのハンダ付け">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1" class="md-nav__link">
+    2-1．ピンソケット/ピンヘッダの差し込み
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-2promicro" class="md-nav__link">
+    2-2．ProMicroの仮止め
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-3promicro" class="md-nav__link">
+    2-3．ProMicroのハンダ付け
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. リセットスイッチのハンダ付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. ファームウェアの書き込みと動作確認
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5. (オプション)ロータリーエンコーダーのハンダ付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6. キースイッチのハンダ付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    7. キーキャップの取り付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    8. ゴム足の貼り付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    9. キーマップを変更する
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ex2" class="md-nav__link">
+    EX2．無線対応
+  </a>
+  
+    <nav class="md-nav" aria-label="EX2．無線対応">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ex2-1ble-micro-pro" class="md-nav__link">
+    EX2-1．BLE Micro Proのハンダ付け
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ex2-2" class="md-nav__link">
+    EX2-2．電池部品のハンダ付け
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ex2-3" class="md-nav__link">
+    EX2-3．ファームウェアの書き込み
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ex3" class="md-nav__link">
+    EX3．アクリルケースの装着
+  </a>
+  
+    <nav class="md-nav" aria-label="EX3．アクリルケースの装着">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ex3-1" class="md-nav__link">
+    EX3-1．ボトムプレートにスペーサーを取り付けてネジ止め
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ex3-2" class="md-nav__link">
+    EX3-2．ボトムプレートに基板、トッププレートを取り付けてネジ止め
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ex3-3promicro" class="md-nav__link">
+    EX3-3．ProMicroをカバーするプレートを取り付けてネジ止め
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ex3-4" class="md-nav__link">
+    EX3-4．ゴム足を貼り付ける
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" tabindex="0" aria-expanded="false">
+          Primer79
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Primer79" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Primer79
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Primer79/readme/" class="md-nav__link">
+        Primer79 ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" tabindex="0" aria-expanded="false">
+          Quick17
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Quick17" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Quick17
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Quick17/readme/" class="md-nav__link">
+        Quick17 ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_2" tabindex="0" aria-expanded="false">
+          Hex
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Hex" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Hex
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Quick17/hex/readme/" class="md-nav__link">
+        Readme
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7" tabindex="0" aria-expanded="false">
+          Quick7
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Quick7" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Quick7
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Quick7/BuildGuide/" class="md-nav__link">
+        Quick7 ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Quick7/Buildguide-en/" class="md-nav__link">
+        Quick7 Buildguide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8" tabindex="0" aria-expanded="false">
+          Helix rev3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Helix rev3" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Helix rev3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../helix_rev3/BuildGuide_LP/" class="md-nav__link">
+        Helix rev3 LP 組み立てガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../helix_rev3/ForMore/" class="md-nav__link">
+        上級者向けの各機能について
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../helix_rev3/TroubleShooting/" class="md-nav__link">
+        故障かな？とおもったら
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9" tabindex="0" aria-expanded="false">
+          Switch keychain kit
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Switch keychain kit" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Switch keychain kit
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../switch-keychain-kit/" class="md-nav__link">
+        Cherry MXキーチェーン のくみたてかた
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    注意事項
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    １．キットに同梱されている部品をチェックする
+  </a>
+  
+    <nav class="md-nav" aria-label="１．キットに同梱されている部品をチェックする">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1" class="md-nav__link">
+    １－１．オプション部品（ロータリーエンコーダ）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2" class="md-nav__link">
+    １－２．オプション部品（アクリルケース）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-3" class="md-nav__link">
+    １－３．オプション部品（無線用部品）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    ２．別途準備するパーツをチェックする
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    必要な道具
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    組み立ての手順
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    1. ダイオードのハンダ付け
+  </a>
+  
+    <nav class="md-nav" aria-label="1. ダイオードのハンダ付け">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1_1" class="md-nav__link">
+    1-1．ダイオードの足を曲げる
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2_1" class="md-nav__link">
+    1-2．基板の穴にダイオードを差し込む
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-3_1" class="md-nav__link">
+    1-3．ダイオードをハンダ付けする
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-4" class="md-nav__link">
+    1-4．余ったダイオードの足をニッパーで切る
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-5" class="md-nav__link">
+    1-5．切り取った断面にハンダごてを当てる
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-promicro13" class="md-nav__link">
+    2. ProMicroとピンヘッダ/13ピンソケットのハンダ付け
+  </a>
+  
+    <nav class="md-nav" aria-label="2. ProMicroとピンヘッダ/13ピンソケットのハンダ付け">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1" class="md-nav__link">
+    2-1．ピンソケット/ピンヘッダの差し込み
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-2promicro" class="md-nav__link">
+    2-2．ProMicroの仮止め
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-3promicro" class="md-nav__link">
+    2-3．ProMicroのハンダ付け
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. リセットスイッチのハンダ付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. ファームウェアの書き込みと動作確認
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5. (オプション)ロータリーエンコーダーのハンダ付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6. キースイッチのハンダ付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    7. キーキャップの取り付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    8. ゴム足の貼り付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    9. キーマップを変更する
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ex2" class="md-nav__link">
+    EX2．無線対応
+  </a>
+  
+    <nav class="md-nav" aria-label="EX2．無線対応">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ex2-1ble-micro-pro" class="md-nav__link">
+    EX2-1．BLE Micro Proのハンダ付け
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ex2-2" class="md-nav__link">
+    EX2-2．電池部品のハンダ付け
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ex2-3" class="md-nav__link">
+    EX2-3．ファームウェアの書き込み
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ex3" class="md-nav__link">
+    EX3．アクリルケースの装着
+  </a>
+  
+    <nav class="md-nav" aria-label="EX3．アクリルケースの装着">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ex3-1" class="md-nav__link">
+    EX3-1．ボトムプレートにスペーサーを取り付けてネジ止め
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ex3-2" class="md-nav__link">
+    EX3-2．ボトムプレートに基板、トッププレートを取り付けてネジ止め
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ex3-3promicro" class="md-nav__link">
+    EX3-3．ProMicroをカバーするプレートを取り付けてネジ止め
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ex3-4" class="md-nav__link">
+    EX3-4．ゴム足を貼り付ける
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="primer16">Primer16 ビルドガイド</h1>
+<p><img alt="completed_assembly_Front" src="../imgs/Completed_assembly_Front.JPG" />
+<img alt="completed_assembly_Back" src="../imgs/Completed_assembly_Back.JPG" /></p>
+<p>Primer16のお買い上げありがとうございます。</p>
+<p><strong>実際の組み立てを始める前に、このビルドガイドを最後までお読みください。</strong></p>
+<p>組み立ては本手順に沿って行ってください。<br />
+本手順に疑問等がある場合は遊舎工房の<a href="https://yushakobo.zendesk.com/hc/ja">サポートページ</a>を参照の上、お気軽にお問い合わせください。</p>
+<h2 id="_1">注意事項</h2>
+<p>本キットの組み立てにはニッパーなどの刃物やハンダごてなどの火傷の危険性がある道具を使用しますので、十分に注意して作業を行ってください。<br />
+キットの部品には細かい部品も含まれますので、保管する際はお子様などの手に届かない場所に保管してください。<br />
+作業中に出るゴミ、切ったダイオードの足やピンヘッダの足などが刺さったりしますので、適宜清掃をしながら作業されることをお勧めします。</p>
+<p><strong>本ガイド内の写真は一部Primer79のものを流用しています。</strong><br />
+<strong>適宜読み替えてください。</strong></p>
+<h2 id="1">１．キットに同梱されている部品をチェックする</h2>
+<p>まずはキットに同梱されている部品が足りているかチェックしてください。<br />
+万が一部品に不足がある場合は、大変お手数ですが遊舎工房の<a href="https://yushakobo.zendesk.com/hc/ja/requests/new">お問い合わせフォーム</a>のカテゴリ <strong>「購入した商品の不足・初期不良等」</strong> を選択してお問い合わせください。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>数量</th>
+<th>画像</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基板</td>
+<td>1</td>
+<td><img alt="PCB" src="../imgs/PCB.JPG" /></td>
+<td></td>
+</tr>
+<tr>
+<td>スルーホールダイオード</td>
+<td>18</td>
+<td><img alt="Diode" src="../imgs/Diode.JPG" /></td>
+<td>表面実装タイプにも対応（別途購入）</td>
+</tr>
+<tr>
+<td>ProMicro</td>
+<td>1</td>
+<td><img alt="ProMicro" src="../imgs/ProMicro.jpg" /></td>
+<td></td>
+</tr>
+<tr>
+<td>13ピンソケット</td>
+<td>2</td>
+<td><img alt="Pinsocket" src="../imgs/Pinsocket.JPG" /></td>
+<td></td>
+</tr>
+<tr>
+<td>リセットスイッチ</td>
+<td>1</td>
+<td><img alt="ResetSwitch" src="../imgs/ResetSwitch.jpg" /></td>
+<td></td>
+</tr>
+<tr>
+<td>ゴム足</td>
+<td>4</td>
+<td><img alt="Cushion" src="../imgs/Cushion.jpg" /></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="1-1">１－１．オプション部品（ロータリーエンコーダ）</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>数量</th>
+<th>画像</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ロータリーエンコーダ</td>
+<td>2</td>
+<td><img alt="Encoder" src="../imgs/Encoder.jpg" /></td>
+<td>ご購入は<a href="https://shop.yushakobo.jp/products/3762">こちら</a><br>プッシュスイッチ付きのものにも対応</td>
+</tr>
+<tr>
+<td>ノブ</td>
+<td>2</td>
+<td><img alt="Knob" src="../imgs/Knob.jpg" /></td>
+<td>ご購入は<a href="https://shop.yushakobo.jp/products/3730">こちら</a><br>直径25mm以下のもの</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1-2">１－２．オプション部品（アクリルケース）</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>数量</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>アクリルプレート（5mm）</td>
+<td>１式</td>
+<td><a href="https://shop.yushakobo.jp/products/keyboard_acrylic_plate">キーボードアクリルプレート</a>にて購入してください</td>
+</tr>
+<tr>
+<td>アクリルプレート（3mm）</td>
+<td>１式</td>
+<td><a href="https://shop.yushakobo.jp/products/keyboard_acrylic_plate">キーボードアクリルプレート</a>にて購入してください</td>
+</tr>
+<tr>
+<td>ネジ（5mm）</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>ネジ（10mm）</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td>ネジ（12mm）</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>キャップボルト（18mm）</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td>スペーサー（4.5mm）</td>
+<td>8</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="1-3">１－３．オプション部品（無線用部品）</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>数量</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BLE Micro Pro</td>
+<td>1</td>
+<td>ご購入は<a href="https://shop.yushakobo.jp/products/ble-micro-pro">こちら</a></td>
+</tr>
+<tr>
+<td>BLE Micro Pro用電池基板</td>
+<td>1</td>
+<td>ご購入は<a href="https://shop.yushakobo.jp/products/ble-micro-pro-battery-board">こちら</a></td>
+</tr>
+<tr>
+<td>コイン電池</td>
+<td>2</td>
+<td>CR1632を購入してください</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2">２．別途準備するパーツをチェックする</h2>
+<p>キットには含まれていないパーツは別途用意する必要があります。
+予め購入し、組立前に不足がないかチェックしてください。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>数量</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>キースイッチ</td>
+<td>16</td>
+<td>ご購入は<a href="https://shop.yushakobo.jp/collections/all-switches/cherry-mx-%E4%BA%92%E6%8F%9B-%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81">こちら</a><br>CherryMX互換スイッチのみ対応</td>
+</tr>
+<tr>
+<td>キーキャップ</td>
+<td>16</td>
+<td>ご購入は<a href="https://shop.yushakobo.jp/collections/keycaps/cherry-mx-%E4%BA%92%E6%8F%9B-%E3%82%AD%E3%83%BC%E3%82%AD%E3%83%A3%E3%83%83%E3%83%97">こちら</a><br>キーレイアウトとキーキャップセットをよくチェックして購入してください</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">必要な道具</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ハンダごて</td>
+<td>できるだけ温度調節機能付きのもの</td>
+</tr>
+<tr>
+<td>ハンダ線</td>
+<td>0.6mm~0.8mm径程度のもの</td>
+</tr>
+<tr>
+<td>ニッパー</td>
+<td></td>
+</tr>
+<tr>
+<td>ピンセット</td>
+<td>スイッチの導通チェック用（代用可）</td>
+</tr>
+<tr>
+<td>ドライバー</td>
+<td>アクリルケースオプションの際に必要です。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>こちらに<a href="https://shop.yushakobo.jp/products/a9900to">工具セット</a>の用意もありますので、よろしければ部品と一緒にどうぞ。</strong></p>
+<h2 id="_3">組み立ての手順</h2>
+<ol>
+<li>ダイオードのハンダ付け</li>
+<li>ProMicroとピンヘッダのハンダ付け</li>
+<li>リセットスイッチのハンダ付け</li>
+<li>ファームウェアの書き込みと動作確認</li>
+<li>(オプション)ロータリーエンコーダーのハンダ付け</li>
+<li>キースイッチのハンダ付け</li>
+<li>キーキャップの取り付け</li>
+<li>ゴム足の貼り付け</li>
+<li>キーマップを変更する</li>
+</ol>
+<h2 id="1_1">1. ダイオードのハンダ付け</h2>
+<p>基板上に実装するキースイッチを正しく認識させるため、ダイオードを正しい向きでハンダ付けします。<br />
+間違った向きで取り付けると正しく認識できないので、注意してください。  </p>
+<h3 id="1-1_1">1-1．ダイオードの足を曲げる</h3>
+<p><strong>Check:基板は裏返して作業します。</strong><br />
+<strong>裏側はスイッチの番号やダイオードの番号が書かれた面です。</strong>  </p>
+<p>ダイオードには円筒形の素子部分と基板にハンダ付けをする針金状の足部分があります。<br />
+あらかじめ針金状の足部分を曲げておき、後の工程で基板に差し込みやすくしておきます。<br />
+下の画像はダイオードを差し込み、ハンダ付けする部分の拡大図です。<br />
+<img alt="Diode-1" src="../imgs/Diode-1.JPG" /><br />
+この部分の左右の穴にあわせてダイオードの足を折り曲げておきます。<br />
+<img alt="Diode-2" src="../imgs/Diode-2.JPG" /><br />
+※一個ずつダイオードの台紙から切り離してから曲げる必要はなく、ダイオードがついている台紙ごと一気に折り曲げても大丈夫です。</p>
+<h3 id="1-2_1">1-2．基板の穴にダイオードを差し込む</h3>
+<p><strong>Check:ダイオードの向きに注意。</strong><br />
+<strong>ダイオードの向きを間違えると押したキーと違う文字が入力されてしまいます。</strong>  </p>
+<p>ダイオードの向きは円筒形の素子に印刷されたラインから判断します。<br />
+<img alt="Diode-3" src="../imgs/Diode-3.JPG" /><br />
+基板に取り付ける向きは基板の印刷を確認してください。<br />
+<code>[|◁]</code>の三角形の向いた先にダイオードのラインが来るように差し込みます。<br />
+<img alt="Diode-4" src="../imgs/Diode-4.JPG" /><br />
+※Primer16は基板裏側から見た時に、全てのダイオードの左側にラインが来るように向きを揃えています。  </p>
+<p><strong>Point:ダイオードを差し込んだままだとハンダ付けをする際に基板をひっくり返す際に落ちてしまいます。</strong><br />
+<strong>落ちないようにダイオードの足をちょっと曲げるか、マスキングテープなどで素子を留めて上げると後の工程をスムーズに進める事ができます。</strong></p>
+<h3 id="1-3_1">1-3．ダイオードをハンダ付けする</h3>
+<p><strong>Check:ハンダごては高温になりますので火傷に注意してください。</strong><br />
+<strong>Check:基板は表面で作業します。</strong>  </p>
+<p>基板をひっくり返して、表面からダイオードの足をハンダ付けします。<br />
+ハンダ付けは、まず基板とダイオードの足をハンダごての先で触れて温め、その1秒後くらいにハンダを温めている部分に送ってハンダ付けをします。<br />
+ハンダを多く送る必要はありません。<br />
+以下の写真のハンダの量、またはYouTubeなどのハンダ付け動画を目安にハンダ付けを行ってください。<br />
+<img alt="Diode-7" src="../imgs/Diode-7.JPG" />  </p>
+<p><strong>Point:温度調節ができるハンダごてなら320°位がちょうどいいです。</strong>  </p>
+<h3 id="1-4">1-4．余ったダイオードの足をニッパーで切る</h3>
+<p><strong>Check:ダイオードの足を切った残りの針金はすぐにまとめてください。</strong><br />
+<strong>床に落ちたまま放置すると足に刺さります。</strong>  </p>
+<p>ダイオードの足をニッパーで切り取ります。<br />
+余裕を持って切る必要はありません。<br />
+基板ギリギリで切り取ってください。<br />
+<img alt="Diode-8" src="../imgs/Diode-8.JPG" />  </p>
+<p><strong>Check:ここで余裕を持って切ってしまうと使用時に机に傷をつけてしまう場合があります。</strong></p>
+<h3 id="1-5">1-5．切り取った断面にハンダごてを当てる</h3>
+<p>ニッパーで切り取っただけでは切断面が尖っている場合があります。<br />
+<img alt="Diode-8" src="../imgs/Diode-8.JPG" /><br />
+※上の写真では尖っている部分は見えづらいですが、指で触ると尖っていることがわかります。  </p>
+<p>もう一度ハンダごてで触れてハンダを溶かすことで切断面が丸まります。<br />
+<img alt="Diode-9" src="../imgs/Diode-9.JPG" /><br />
+<strong>Point:ハンダごてを当てただけでは丸まらない場合は、ハンダを少量追加すると丸まります。</strong>  </p>
+<h2 id="2-promicro13">2. ProMicroとピンヘッダ/13ピンソケットのハンダ付け</h2>
+<p><strong>Check:ProMicroの裏表に十分に注意してください。</strong><br />
+<strong>逆に取り付けてしまった場合、ピンヘッダを取り外すのはとても大変です。</strong>  </p>
+<p><strong>Check:無線対応をしたい場合、ProMicroの代わりにBLE Micro Proをハンダ付けします。</strong><br />
+<strong>この場合も裏表に十分注意してください。</strong><br />
+<strong>後述の「EX2．無線対応」を変わりに参照してください。</strong>  </p>
+<h3 id="2-1">2-1．ピンソケット/ピンヘッダの差し込み</h3>
+<p>ピンソケットを基板の <strong>表側</strong> から差し込みます。  </p>
+<p><img alt="Pinsocket-1" src="../imgs/Pinsocket-1.JPG" />  </p>
+<p>ピンヘッダの短い方をピンソケットの上に当てます。<br />
+<strong>Check:ピンソケットの一番上のピンを開けておきます。</strong><br />
+<strong>Point:この時点では奥まで挿さなくても大丈夫です。</strong>  </p>
+<p><img alt="Pinsocket-2" src="../imgs/Pinsocket-2.JPG" />  </p>
+<p>ProMicroをピンヘッダに通します。<br />
+<strong>Check:まだこの時点ではゆるくてOKです。</strong><br />
+<img alt="Pinsocket-3" src="../imgs/Pinsocket-3.JPG" />  </p>
+<p>ProMicroの両端を持ち、まっすぐ押してピンヘッダをピンソケットに押し込んでいきます。<br />
+横からピンヘッダが見えないことを確認します。<br />
+<img alt="Pinsocket-4" src="../imgs/Pinsocket-4.JPG" />  </p>
+<h3 id="2-2promicro">2-2．ProMicroの仮止め</h3>
+<p>このとき、ProMicroの向きに十分に注意します。<br />
+基板の<strong>表側</strong>からProMicroの<strong>チップ部品が見えるように</strong>なっているはずです。<br />
+後でProMicroのハンダを外すのは大変な労力を伴いますので、ここで<strong>必ず上の写真と相違が無いかチェック</strong>しておきます。</p>
+<p>ProMicroとピンヘッダの <strong>一番上だけ</strong> をハンダ付けします。</p>
+<p><img alt="ProMicro-3" src="../imgs/ProMicro-3.JPG" /><br />
+<img alt="ProMicro-4" src="../imgs/ProMicro-4.JPG" />  </p>
+<p>ProMicroとピンソケットが斜めになっていたり、浮いていたりしないか確認します。<br />
+※もし斜めになっていたり浮いていた場合はもう一度ハンダごてで温めて直してください。</p>
+<p>裏側も同様に <strong>一番上だけ</strong> をハンダ付けし、浮いていないか確認します。<br />
+<strong>Point:浮いていたり傾いていた場合はもう一度ハンダごてで温めて直してください。</strong>  </p>
+<p><img alt="ProMicro-5" src="../imgs/ProMicro-5.JPG" /><br />
+<img alt="ProMicro-6" src="../imgs/ProMicro-6.JPG" />  </p>
+<h3 id="2-3promicro">2-3．ProMicroのハンダ付け</h3>
+<p><strong>Check:ピンヘッダをニッパーで切る際、勢いよく飛んで怪我をする可能性があります。</strong>  </p>
+<p>他のピンヘッダの飛び出ている部分をニッパーで切り取ります。<br />
+<strong>Point:ProMicroや基板ギリギリでピンヘッダを切り取ってください。余裕は不要です。</strong><br />
+<strong>すでにハンダ付けしたピンヘッダも切り取ってください。</strong>  </p>
+<p><img alt="ProMicro-7" src="../imgs/ProMicro-7.JPG" /><br />
+<img alt="ProMicro-8" src="../imgs/ProMicro-8.JPG" />  </p>
+<p><strong>Check:ニッパーでそのまま切り取ろうとすると勢いよくピンヘッダの切れ端が飛んでいきます。</strong><br />
+<strong>飛ぶ際に目に刺さったりすると非常に危険ですし、落ちた切れ端を踏むと刺さります。</strong><br />
+<strong>必ず飛ばないようにピンヘッダを押さえながら切り取り、作業を中断する際は必ず片付けてください。</strong></p>
+<p>基板の表側からProMicroをハンダ付けし、基板の裏側からピンソケットをハンダ付けします。  </p>
+<p><img alt="ProMicro-9" src="../imgs/ProMicro-9.JPG" /><br />
+<img alt="ProMicro-10" src="../imgs/ProMicro-10.JPG" />  </p>
+<p><strong>Point:最初にハンダ付けして切り取ったピンヘッダは最後に温めることで丸く綺麗な状態になります。</strong>  </p>
+<p><img alt="ProMicro-11" src="../imgs/ProMicro-11.JPG" />  </p>
+<h2 id="3">3. リセットスイッチのハンダ付け</h2>
+<p><strong>Point:リセットスイッチはハンダ付けせずに使うことも出来ます。</strong><br />
+<strong>使う機会も少ないので、頻繁にファームウェアを書き換える予定がなければハンダ付けを省略しても大丈夫です。</strong><br />
+<strong>なお、キーマップの書き換えにリセットスイッチは不要です。</strong>  </p>
+<p>基板右側、ProMicroの下に<code>Reset</code>とある部分にリセットスイッチを表面に取り付け、裏側からハンダ付けします。  </p>
+<p><img alt="ResetSW-1" src="../imgs/ResetSW-1.JPG" /><br />
+<img alt="ResetSW-2" src="../imgs/ResetSW-2.JPG" />  </p>
+<p>ハンダ付けした後、ニッパーで切り取ってもう一度ハンダごてで温めることで机に傷をつけずに使うことが出来ます。</p>
+<p><img alt="ResetSW-3" src="../imgs/ResetSW-3.JPG" />  </p>
+<h2 id="4">4. ファームウェアの書き込みと動作確認</h2>
+<p>Primer16はファームウェアとしてqmk_firmwareを使用しています。<br />
+Remapのカタログ機能を用いてファームウェアの書き込みを行います。</p>
+<p>※BLE Micro Proの書き込みは本ビルドガイドの末尾の<code>EX2-3．ファームウェアの書き込み</code>を参照してください。</p>
+<p>https://remap-keys.app/catalog/bxIyrAZHGcJBC9uxH85O/firmware</p>
+<p>ファームウェアの書き込みが完了したらRemapのコンフィギュレータ画面を開きます。  </p>
+<p>https://remap-keys.app/configure</p>
+<p>FLASHをクリックします。</p>
+<p><img alt="Remap-1" src="../imgs/Remap-1.png" />  </p>
+<p>通常のProMicroは「caterina」を、Elite-Cは「dfu」を選択してからFLASHをクリックします。<br />
+※「dfu」を使用しての書き込みは別途Zadigというツールを用いた作業が必要になる場合があります。</p>
+<p><img alt="Remap-2" src="../imgs/Remap-2.png" />  </p>
+<p>下図のように小ウインドウに「Arduino Micro」等が表示されることを確認します。<br />
+表示されない場合、ケーブルや接続するポートを変更して試してみます。</p>
+<p><img alt="Remap-6" src="../imgs/Remap-6.png" />  </p>
+<p>リセットスイッチを押すと一瞬USB機器が抜けたような音がするので先程の小ウインドウのArduino Microのポート番号が変化したことを確認し、素早く「接続」をクリック。<br />
+（本ビルドガイドの図例の場合、COM17がCOM18に変化）<br />
+ポート番号が変化しない場合、リセットを素早く2回実施する等も試してみてください。  </p>
+<p><img alt="Remap-7" src="../imgs/Remap-7.png" />  </p>
+<p>ファームウェアの書き込みが完了したら下図のようにメッセージの最後に「successfully」が表示されます。</p>
+<p><img alt="Remap-8" src="../imgs/Remap-8.png" />  </p>
+<p>ファームウェアの書き込みが完了したらRemapのコンフィギュレータ画面を開きます。  </p>
+<p>https://remap-keys.app/configure</p>
+<p>Remapで正常に認識できたらテストモードを開き、ピンセットでスイッチ用の穴に触れて導通をチェックします。  </p>
+<p><img alt="Remap-3" src="../imgs/Remap-3.png" /><br />
+<img alt="Remap-4" src="../imgs/Remap-4.JPG" />  </p>
+<p><strong>Point:ピンセットがない場合、切り取ったダイオードの足やアルミ箔を切ったものでも代用できます。</strong>  </p>
+<p>全て正常だと下図のように全てのキーが青くなります。<br />
+<img alt="Remap-5" src="../imgs/Remap-5.png" />  </p>
+<p><strong>Point:右上の4キー分はロータリーエンコーダの回転部分です。</strong><br />
+<strong>この4キー分は青く反応しなくても正常です。</strong><br />
+<strong>Point:ダイオードの番号とスイッチの番号はリンクしています。</strong><br />
+<strong>違う部分のキーが反応した場合はダイオードの向きを確認してください。</strong><br />
+<strong>Point:もし違う部分のキーが反応した場合はスイッチに対応するダイオードの向きを確認してください。</strong><br />
+<strong>ダイオードの番号とスイッチの番号はリンクしています。</strong>  </p>
+<h2 id="5">5. (オプション)ロータリーエンコーダーのハンダ付け</h2>
+<p>表面からロータリーエンコーダーを取り付けます。<br />
+取付箇所はF11と12キーの部分です。  </p>
+<p>机を傷つけないように裏面から飛び出たピンを切ってからハンダ付けをしてください。<br />
+ピンを切る際は余分を残さず、できるだけ根本から切り取ってください。<br />
+<img alt="RE-1" src="../imgs/RE-1.JPG" /><br />
+<img alt="RE-2" src="../imgs/RE-2.JPG" /><br />
+<img alt="RE-3" src="../imgs/RE-3.JPG" />  </p>
+<p><strong>Point:ロータリーエンコーダの横の曲がっている部分は固定用のピンなので、切り取り及びハンダ付けは不要です。</strong>  </p>
+<h2 id="6">6. キースイッチのハンダ付け</h2>
+<p>キースイッチを取り付け、ピンをハンダ付けします。<br />
+机を傷つけないように飛び出たピンを切ってからハンダ付けをしてください。<br />
+<strong>Check:ハンダ付けの前にキースイッチが奥まで差し込まれていることを確認してください。</strong>  </p>
+<p><img alt="SW-1" src="../imgs/SW-1.JPG" /><br />
+<img alt="SW-2" src="../imgs/SW-2.JPG" /><br />
+<img alt="SW-3" src="../imgs/SW-3.JPG" />  </p>
+<h2 id="7">7. キーキャップの取り付け</h2>
+<p>キーキャップを取り付けます。</p>
+<p><img alt="completed_assembly_Front" src="../imgs/Completed_assembly_Front.JPG" />
+<img alt="completed_assembly_Back" src="../imgs/Completed_assembly_Back.JPG" /></p>
+<h2 id="8">8. ゴム足の貼り付け</h2>
+<p>下の写真を参考に、基板端の八箇所にゴム足を貼り付けます。</p>
+<p><img alt="Feet" src="../imgs/Feet.JPG" /></p>
+<h2 id="9">9. キーマップを変更する</h2>
+<p>あなたが使用しやすいようにキーマップを変更してください。<br />
+キーマップの変更はRemapを使用すると便利です。</p>
+<p>https://remap-keys.app/configure</p>
+<p>Remapの使用方法は以下のサイトを参考にしてください。</p>
+<p>https://salicylic-acid3.hatenablog.com/entry/remap-manual</p>
+<h2 id="ex2">EX2．無線対応</h2>
+<p>ProMicroの代わりにBLE Micro Proを使うことでBluetoothを用いた無線接続を行う事ができます。<br />
+そのままでもモバイルバッテリー等によるUSB給電を行えますが、BLE Micro Pro用電池基板の部品を用いることで、コイン電池（CR1632）による完全無線を実現することが出来ます。</p>
+<h3 id="ex2-1ble-micro-pro">EX2-1．BLE Micro Proのハンダ付け</h3>
+<p>基本的に取付方法はProMicroと同じですが、電池用のピンのために、右側だけ上にオフセットして取り付ける必要があります。<br />
+左側はそのままでもオフセットしても大丈夫です。<br />
+<img alt="BMP-1" src="../imgs/BMP-1.JPG" />  </p>
+<h3 id="ex2-2">EX2-2．電池部品のハンダ付け</h3>
+<p>コイン電池ホルダーを表側に装着します。<br />
+ホルダーには向きがあるので注意してください。<br />
+<img alt="BMP-2" src="../imgs/BMP-2.JPG" />  </p>
+<p>裏返してハンダ付けをする際に浮いてしまわないように、マスキングテープなどでホルダーを押さえておきます。</p>
+<p><img alt="BMP-3" src="../imgs/BMP-3.JPG" /><br />
+<img alt="BMP-4" src="../imgs/BMP-4.JPG" />  </p>
+<p>ショットキーバリアダイオードとチップコンデンサ、スライドスイッチをハンダ付けします。
+ショットキーバリアダイオードとチップコンデンサのハンダ付けは表面実装ダイオードの取り付けと同じです。  </p>
+<p>まず基板に予備ハンダと呼ばれるハンダをちょっと盛っておきます。<br />
+その後、ピンセットでダイオードやコンデンサを持ち、予備ハンダをハンダごてで溶かしつつダイオードやコンデンサを基板に設置します。<br />
+長く温めすぎてハンダが尖ってしまったら、フラックスを追加してあげるとうまくいきやすいです。
+<strong>Point:表面実装ダイオードが不安な場合、練習ゾーンであらかじめ練習しておくと安心です。</strong><br />
+<strong>電池用のショットキーバリアダイオードとスイッチ用のスイッチングダイオードは異なります。</strong><br />
+<strong>スイッチングダイオードを電池に使用してしまうと使用できる電池容量の低下を招きます。</strong>  </p>
+<p><img alt="BMP-5" src="../imgs/BMP-5.JPG" />  </p>
+<p>最後にスライドスイッチをハンダ付けします。<br />
+スライドスイッチは下の写真の赤枠部だけ使用しますが、他のピンも固定のために少量ハンダ付けしておきます。</p>
+<p><img alt="BMP-6" src="../imgs/BMP-6.JPG" />  </p>
+<p><strong>Check:ハンダの量が多いとスイッチの内部にハンダが流れ込み、スイッチが動かなくなる場合があります。</strong><br />
+<strong>ハンダごてで加熱しすぎるとスイッチのノブが取れやすくなる場合があります。</strong>  </p>
+<p><img alt="BMP-7" src="../imgs/BMP-7.jpg" />  </p>
+<h3 id="ex2-3">EX2-3．ファームウェアの書き込み</h3>
+<p>ファームウェアは以下のBLE Micro Pro Web Configuratorから書き込みをしてください。  </p>
+<p>https://sekigon-gonnoc.github.io/BLE-Micro-Pro-WebConfigurator/</p>
+<p>BLE Micro Pro Web Configuratorの上から順番に実行してください。<br />
+上から順番に実行した後、「キーボードごとの設定を書き込む」ボタンから「Primer16」を選択して書き込んでください。  </p>
+<p><img alt="BMP-8" src="../imgs/BMP-8.png" /><br />
+<img alt="BMP-9" src="../imgs/BMP-9.png" />  </p>
+<p>書き込み後は「3. リセットスイッチのハンダ付け」と同様の手順となります。  </p>
+<p><strong>Point:Bluetooth接続が不安定、キーマップの書き換えが出来ない、などのBLE Micro Pro特有の問題については<a href="https://github.com/sekigon-gonnoc/BLE-Micro-Pro/blob/master/docs/FAQ.md">こちら</a>のFAQを確認してください。</strong>  </p>
+<h2 id="ex3">EX3．アクリルケースの装着</h2>
+<p>カットしたアクリルをケースとして用いることで、自由な配色のケースを装着することが出来ます。<br />
+ケースを装着すると剛性が向上し、堅牢かつ良好な打鍵感を体験できます。  </p>
+<p><img alt="acrylic_case_assembly_Front" src="../imgs/acrylic_case_assembly_Front.JPG" />
+<img alt="acrylic_case_assembly_Back" src="../imgs/acrylic_case_assembly_Back.JPG" /></p>
+<h3 id="ex3-1">EX3-1．ボトムプレートにスペーサーを取り付けてネジ止め</h3>
+<p>まず本工程で使用する部品を確認します。<br />
+一番底面のプレート(3mm)です。<br />
+<img alt="Acrylic-1" src="../imgs/Acrylic-1.png" /></p>
+<p>基板にすぐ下のプレート(3mm)です。<br />
+部品の干渉を避けるためにフレーム状になっています。<br />
+<img alt="Acrylic-2" src="../imgs/Acrylic-2.png" /></p>
+<p>チルト用の足にするプレート(5mm)です。<br />
+左側にネジ穴が2つ寄るように使います。<br />
+<img alt="Acrylic-3" src="../imgs/Acrylic-3.png" /></p>
+<p>手前側は一番底面のプレート、基板下のプレートを重ね、スペーサーを落とし込んで裏側から5mmのネジで止めます。<br />
+<img alt="Acrylic-5" src="../imgs/Acrylic-5.png" /></p>
+<p>後ろ側はチルト用のプレート、一番底面のプレート、基板下のプレートを重ね、スペーサーを落とし込んで裏側から10mmのネジで止めます。<br />
+<img alt="Acrylic-4" src="../imgs/Acrylic-4.png" /></p>
+<h3 id="ex3-2">EX3-2．ボトムプレートに基板、トッププレートを取り付けてネジ止め</h3>
+<p>まず本工程で使用する部品を確認します。  </p>
+<p>基板にすぐ上のプレート(5mm)です。<br />
+部品の干渉を避けるためにフレーム状になっています。<br />
+2枚同じものが入っています。<br />
+<img alt="Acrylic-6" src="../imgs/Acrylic-6.png" /></p>
+<p>EX3-1でボトムプレートを重ねたものの上に基板とプレート2種を重ね、12mmのネジで<strong>手前2箇所だけを軽く</strong>ネジ止めをします。<br />
+<img alt="Acrylic-7" src="../imgs/Acrylic-7.png" /></p>
+<p>軽くネジ止めをしたあと、キーキャップを取り付けて実際に押しながら干渉をチェックし、干渉しないことを確認出来たら他のネジも取り付けて増し締めします。<br />
+<img alt="Acrylic-8" src="../imgs/Acrylic-8.jpg" /></p>
+<h3 id="ex3-3promicro">EX3-3．ProMicroをカバーするプレートを取り付けてネジ止め</h3>
+<p>まず本工程で使用する部品を確認します。  </p>
+<p>基板にすぐ上のプレート(5mm)です。
+コイン電池を避けるような形状になっています。<br />
+<img alt="Acrylic-9" src="../imgs/Acrylic-9.png" />  </p>
+<p>無線化しない時用のコイン電池の避けがない形状になっています。<br />
+こちらは2枚入っています。<br />
+<img alt="Acrylic-10" src="../imgs/Acrylic-10.png" />  </p>
+<p>ProMicroをカバーするプレート(3mm)です。<br />
+25mmロータリーエンコーダを避けるような穴が空いています。<br />
+ProMicroを避ける形状のものと、完全にカバーする形状のものの2種類あります。<br />
+<img alt="Acrylic-16" src="../imgs/Acrylic-16.png" /><br />
+<img alt="Acrylic-11" src="../imgs/Acrylic-11.png" /></p>
+<p>まず基板の上に2枚のプレートを置き、その上にProMicroを避ける形状のプレート、完全にカバーするプレートを順に重ね、18mmのキャップボルト（指で回せるように背が高くなっているボルト）を使って4箇所ネジ止めします。 <br />
+<img alt="Acrylic-12" src="../imgs/Acrylic-12.png" /><br />
+<img alt="Acrylic-13" src="../imgs/Acrylic-13.png" /><br />
+<img alt="Acrylic-14" src="../imgs/Acrylic-14.png" />  </p>
+<h3 id="ex3-4">EX3-4．ゴム足を貼り付ける</h3>
+<p>裏面にゴム足を貼り付けます。<br />
+<img alt="Acrylic-15" src="../imgs/Acrylic-15.JPG" /></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2023 遊舎工房
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  </body>
+</html>

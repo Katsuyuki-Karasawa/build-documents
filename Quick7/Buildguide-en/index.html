@@ -1,0 +1,1400 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../BuildGuide/">
+      
+      
+        <link rel="next" href="../../helix_rev3/BuildGuide_LP/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
+    
+    
+      
+        <title>Quick7 Buildguide - Yushakobo License Kit Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quick7-buildguide" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../.." title="Yushakobo License Kit Guide" class="md-header__button md-logo" aria-label="Yushakobo License Kit Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Yushakobo License Kit Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quick7 Buildguide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Yushakobo License Kit Guide" class="md-nav__button md-logo" aria-label="Yushakobo License Kit Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Yushakobo License Kit Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        License Kit Build Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
+          ErgoDash
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="ErgoDash" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          ErgoDash
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ErgoDash/AluminiumCase/" class="md-nav__link">
+        ErgoDash親指ありアルミニウムケース組み立て説明
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ErgoDash/ErgoDash_BuildGuide/" class="md-nav__link">
+        ErgoDash 親指ありビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ErgoDash/ErgoDash_BuildGuide_cut/" class="md-nav__link">
+        ErgoDash 親指なし ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ErgoDash/ErgoDash_Parts/" class="md-nav__link">
+        ErgoDash必要部品/必要工具
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
+          Navpad 10
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Navpad 10" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Navpad 10
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Navpad_10/readme/" class="md-nav__link">
+        Navpad 1.0 ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" tabindex="0" aria-expanded="false">
+          Formore
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Formore" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Formore
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Navpad_10/formore/acrylic_plate/" class="md-nav__link">
+        Navpad 1.0用『キーボードアクリルプレート』を使用する
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Navpad_10/formore/aluminum_feet/" class="md-nav__link">
+        チルト用 Aluminum feet セットを使用する
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Navpad_10/formore/connect_with/" class="md-nav__link">
+        Navpad 1.0をほかのキーボードと接続する<br />(上級者向けの改造)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Navpad_10/formore/readme/" class="md-nav__link">
+        Navpad 1.0をカスタマイズする
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
+          Primer16
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Primer16" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Primer16
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Primer16/readme/" class="md-nav__link">
+        Primer16 ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" tabindex="0" aria-expanded="false">
+          Primer79
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Primer79" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Primer79
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Primer79/readme/" class="md-nav__link">
+        Primer79 ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" tabindex="0" aria-expanded="false">
+          Quick17
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Quick17" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Quick17
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Quick17/readme/" class="md-nav__link">
+        Quick17 ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_2" tabindex="0" aria-expanded="false">
+          Hex
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Hex" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Hex
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Quick17/hex/readme/" class="md-nav__link">
+        Readme
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7" tabindex="0" aria-expanded="true">
+          Quick7
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Quick7" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Quick7
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BuildGuide/" class="md-nav__link">
+        Quick7 ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Quick7 Buildguide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Quick7 Buildguide
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#required-parts" class="md-nav__link">
+    Required Parts
+  </a>
+  
+    <nav class="md-nav" aria-label="Required Parts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#optional-parts" class="md-nav__link">
+    Optional Parts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    Tools
+  </a>
+  
+    <nav class="md-nav" aria-label="Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schematic-is-here" class="md-nav__link">
+    Schematic is here
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-getting-started" class="md-nav__link">
+    Before getting started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-steps" class="md-nav__link">
+    Build steps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-ys-sk6812mini-e-leds" class="md-nav__link">
+    1. YS-SK6812MINI-E LEDs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-reset-switch" class="md-nav__link">
+    2. Reset switch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-contrough-xb-3-25-12p" class="md-nav__link">
+    3. Contrough (XB-3-2.5-12P)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-install-switches" class="md-nav__link">
+    4. Install Switches
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-optional-install-rotary-encoders" class="md-nav__link">
+    5. (Optional) Install Rotary encoder(s)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-solder-switches-and-rotary-encoders" class="md-nav__link">
+    6. Solder Switches and Rotary encoder(s)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-install-the-controller" class="md-nav__link">
+    7. Install the controller
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-flash-firmware-test-it" class="md-nav__link">
+    8. Flash firmware, test it
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-assemble-the-case" class="md-nav__link">
+    9. Assemble the case
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-put-keycaps-knobs-and-rubber-feet-on" class="md-nav__link">
+    10. Put keycaps, Knob(s) and rubber feet on
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8" tabindex="0" aria-expanded="false">
+          Helix rev3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Helix rev3" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Helix rev3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../helix_rev3/BuildGuide_LP/" class="md-nav__link">
+        Helix rev3 LP 組み立てガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../helix_rev3/ForMore/" class="md-nav__link">
+        上級者向けの各機能について
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../helix_rev3/TroubleShooting/" class="md-nav__link">
+        故障かな？とおもったら
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9" tabindex="0" aria-expanded="false">
+          Switch keychain kit
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Switch keychain kit" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Switch keychain kit
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../switch-keychain-kit/" class="md-nav__link">
+        Cherry MXキーチェーン のくみたてかた
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#required-parts" class="md-nav__link">
+    Required Parts
+  </a>
+  
+    <nav class="md-nav" aria-label="Required Parts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#optional-parts" class="md-nav__link">
+    Optional Parts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    Tools
+  </a>
+  
+    <nav class="md-nav" aria-label="Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schematic-is-here" class="md-nav__link">
+    Schematic is here
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-getting-started" class="md-nav__link">
+    Before getting started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-steps" class="md-nav__link">
+    Build steps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-ys-sk6812mini-e-leds" class="md-nav__link">
+    1. YS-SK6812MINI-E LEDs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-reset-switch" class="md-nav__link">
+    2. Reset switch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-contrough-xb-3-25-12p" class="md-nav__link">
+    3. Contrough (XB-3-2.5-12P)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-install-switches" class="md-nav__link">
+    4. Install Switches
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-optional-install-rotary-encoders" class="md-nav__link">
+    5. (Optional) Install Rotary encoder(s)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-solder-switches-and-rotary-encoders" class="md-nav__link">
+    6. Solder Switches and Rotary encoder(s)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-install-the-controller" class="md-nav__link">
+    7. Install the controller
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-flash-firmware-test-it" class="md-nav__link">
+    8. Flash firmware, test it
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-assemble-the-case" class="md-nav__link">
+    9. Assemble the case
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-put-keycaps-knobs-and-rubber-feet-on" class="md-nav__link">
+    10. Put keycaps, Knob(s) and rubber feet on
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="quick7-buildguide">Quick7 Buildguide</h1>
+<h2 id="required-parts">Required Parts</h2>
+<p><img alt="kit_parts_overview" src="../imgs/IMG_0387.jpeg" /></p>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>qty</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PCB</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>Top Plate</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>Bottom Plate</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>Pro Micro (or other compatibles, eg: Elite-C)</td>
+<td>1</td>
+<td>"Sparkfun Qwiic Pro Micro" is not supported</td>
+</tr>
+<tr>
+<td>Contrough</td>
+<td>2</td>
+<td>XB-3-2.5-12P from <a href="https://www.mac8japan.com/">MAC8</a></td>
+</tr>
+<tr>
+<td>Reset switch</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>M2 10mm Stand-offs</td>
+<td>4</td>
+<td>Flat diameter 3mm</td>
+</tr>
+<tr>
+<td>M2 4mm Screw</td>
+<td>8</td>
+<td></td>
+</tr>
+<tr>
+<td>Cherry MX compatible keyswitches</td>
+<td>7~9</td>
+<td>Depends on Qty of Rotary Encoder</td>
+</tr>
+<tr>
+<td>Cherry MX compatible keycaps</td>
+<td>7~9</td>
+<td>Depends on Qty of Rotary Encoder</td>
+</tr>
+<tr>
+<td>Rubber feet</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td><br /></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="optional-parts">Optional Parts</h3>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>qty</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Acrylic Middle Plate</td>
+<td>1</td>
+<td>10mm Thick, fits around stand-offs</td>
+</tr>
+<tr>
+<td>LED(YS-SK6812MINI-E)</td>
+<td>13</td>
+<td>for both key backlighting (consider transparent keycaps) and underglow</td>
+</tr>
+<tr>
+<td>Rotary Encoder</td>
+<td>1~2</td>
+<td>Alps EC12E compatible, w/Pushswitch available</td>
+</tr>
+<tr>
+<td>Knob</td>
+<td>1~2</td>
+<td></td>
+</tr>
+<tr>
+<td><br /></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="tools">Tools</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Soldering iron</td>
+<td>When use with YS-SK6812MINI-E LEDs, make sure that is temperature controllable</td>
+</tr>
+<tr>
+<td>Lead solder</td>
+<td>0.6mm-0.8mm diameter</td>
+</tr>
+<tr>
+<td>Precision nippers to trim long legs</td>
+<td></td>
+</tr>
+<tr>
+<td>Screwdriver</td>
+<td>PH1</td>
+</tr>
+<tr>
+<td><br /></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="schematic-is-here">Schematic is <a href="../Quick7.pdf">here</a></h3>
+<h2 id="before-getting-started">Before getting started</h2>
+<p>Please check all the steps of this build before starting. The total build time takes approximately an hour, depending on your skills and practice.</p>
+<p><strong><em>For this build, we will handle a very hot soldering iron. If you leave your seat during the work, be sure to turn off the power and be careful not to get burned or injured.</em></strong></p>
+<h2 id="build-steps">Build steps</h2>
+<p>Here is the summary of building Quick7 keyboard.</p>
+<ol>
+<li>Solder small parts<ol>
+<li>YS-SK6812MINI-E LEDs</li>
+<li>Reset switch</li>
+<li>Conthrough (XB-3-2.5-12P)</li>
+</ol>
+</li>
+<li>Install main parts<ol>
+<li>Switches</li>
+<li>Rotary Encoder(s)</li>
+</ol>
+</li>
+<li>Solder main parts</li>
+<li>Install the controller</li>
+<li>Flash firmware, test it</li>
+<li>Assemble case</li>
+<li>Put keycaps, knob(s) and rubber feet on</li>
+</ol>
+<h2 id="1-ys-sk6812mini-e-leds">1. YS-SK6812MINI-E LEDs</h2>
+<p>When looking at the underside of the PCB, the white "L" shape indicates which corner the notched leg of the LED is put to. Take care to align the LEDs correctly, as they will only work when installed in the correct orientation. Note that from the soldering perspective, all LEDs are facing down, <em>not</em> up.</p>
+<p><strong><em>The direction of the notch changes on each row.</em></strong></p>
+<p><strong>Set the temperature of your soldering iron to 270 degree Celsius or less.</strong>
+Parts other than LEDs have a certain level of heat resistance and can be used at about 320 degree Celsius.</p>
+<p><img alt="ys_sk6812mini_e_footprint" src="../imgs/IMG_0366.png" /></p>
+<p><img alt="ys_sk6812mini_e_closeup" src="../imgs/IMG_0366_1.png" /></p>
+<p>For UnderGlow, use these holes and solder from the other side, again taking care to match the LED notch to the white marker. The LEDs still point down when soldering, and face the opposite direction to the previously soldered LEDs.</p>
+<p><img alt="ys_sk6812mini_e_for_underglow" src="../imgs/IMG_0366_2.png" /></p>
+<h2 id="2-reset-switch">2. Reset switch</h2>
+<p>Install the reset switch and solder from top side (opposite side to the first nine LED solder jobs, same side as the underglow LEDs). This switch will face to the bottom of the device, there is a cut-out in the bottom acrylic plate for it.</p>
+<p><img alt="reset_sw_placing" src="../imgs/IMG_0368.jpeg" /></p>
+<p>Parts we soldered so far (underside view).</p>
+<p><img alt="reset_sw_and_led_soldered_flipped" src="../imgs/IMG_0369.jpeg" /></p>
+<p>(top view)</p>
+<p><img alt="reset_sw_and_led_soldered" src="../imgs/IMG_0370.jpeg" /></p>
+<h2 id="3-contrough-xb-3-25-12p">3. Contrough (XB-3-2.5-12P)</h2>
+<p>The small windows should be on the Pro Micro side.
+<strong><em>DO NOT SOLDER THE HEADERS TO THE MAIN PCB.</em></strong> They will be sufficiently held in by spring tension.</p>
+<p><img alt="conthrough_how_does_it_looks" src="../imgs/IMG_0372.jpeg" /></p>
+<p><strong>Remove</strong> Pro Micro and headers from the PCB when soldering is completed.</p>
+<p><img alt="conthrough_soldering" src="../imgs/IMG_0373.jpeg" /></p>
+<h2 id="4-install-switches">4. Install Switches</h2>
+<p>Check the orientation of Top Plate and mount switches on. The plate indicates the underside with masking (not shown in this photo). Newer versions have "Quick7" logo in the bottom-right hand corner of the top side of the plate.</p>
+<p>If you have rotary encoders to install, be sure to leave the top left / top right switch locations free for them, as they can only be installed in those two spots.</p>
+<p><img alt="top_plate_mounting" src="../imgs/IMG_0375.jpeg" /></p>
+<h2 id="5-optional-install-rotary-encoders">5. (Optional) Install Rotary encoder(s)</h2>
+<p>If you have purchased rotary encoders, put them on the top side of main board (SW10/SW11). They can only be installed in the top left and top right hand corners of the device. If you have not purchased them, the spots should already be occupied by switches.</p>
+<p><img alt="rotary_encoder_put_on" src="../imgs/IMG_0376.jpeg" /></p>
+<h2 id="6-solder-switches-and-rotary-encoders">6. Solder Switches and Rotary encoder(s)</h2>
+<p>Before starting to solder the switches in place, cut the legs of them indicated here to avoid shorting them to the Pro Micro. </p>
+<p><img alt="cut_3_legs_of_switches" src="../imgs/IMG_0377.png" /></p>
+<p>Then, solder all pins</p>
+<p><img alt="switch_soldering_proceed" src="../imgs/IMG_0381.jpeg" /></p>
+<p>and Rotary Encoder(s).</p>
+<p><img alt="soldering_all_completed" src="../imgs/IMG_0392.jpeg" /></p>
+<h2 id="7-install-the-controller">7. Install the controller</h2>
+<p>Put the Pro Micro controller (removed from PCB at step.3) on the board. It does not need to be soldered, the headers will hold it in place with spring tension. Furthermore, the controller can be easily replaced at a later date if desired (for example, with an Elite-C model, which is pin-compatible).</p>
+<p><img alt="promicro_re-placed" src="../imgs/IMG_0393.jpeg" /></p>
+<h2 id="8-flash-firmware-test-it">8. Flash firmware, test it</h2>
+<p>Please refer <a href="https://docs.qmk.fm/">Official Documentations</a> of qmk_firmware and flash your firmware.</p>
+<h2 id="9-assemble-the-case">9. Assemble the case</h2>
+<p>Put standoffs on PCB with screws.</p>
+<p><img alt="standoff_placed" src="../imgs/IMG_0394.jpeg" /></p>
+<p>If you are using a transparent plastic middle plate, insert it now. It will fit over the stand-offs.</p>
+<p><img alt="middle_plate_on" src="../imgs/IMG_0395.jpeg" /></p>
+<p>Finally, add the bottom acrylic plate, and screw it together with the remaining screws. Do not overtighten too much, or you might crack the plastic.</p>
+<h2 id="10-put-keycaps-knobs-and-rubber-feet-on">10. Put keycaps, Knob(s) and rubber feet on</h2>
+<p><img alt="build_complete" src="../imgs/IMG_4044.jpeg" /></p>
+<p>You're done!</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2023 遊舎工房
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  </body>
+</html>

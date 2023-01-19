@@ -1,0 +1,1181 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../AluminiumCase/">
+      
+      
+        <link rel="next" href="../ErgoDash_BuildGuide_cut/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
+    
+    
+      
+        <title>ErgoDash 親指ありビルドガイド - Yushakobo License Kit Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ergodash" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../.." title="Yushakobo License Kit Guide" class="md-header__button md-logo" aria-label="Yushakobo License Kit Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Yushakobo License Kit Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ErgoDash 親指ありビルドガイド
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Yushakobo License Kit Guide" class="md-nav__button md-logo" aria-label="Yushakobo License Kit Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Yushakobo License Kit Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        License Kit Build Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="true">
+          ErgoDash
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="ErgoDash" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          ErgoDash
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AluminiumCase/" class="md-nav__link">
+        ErgoDash親指ありアルミニウムケース組み立て説明
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ErgoDash 親指ありビルドガイド
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        ErgoDash 親指ありビルドガイド
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    はじめに
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1.ダイオードを取り付ける
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2trrs" class="md-nav__link">
+    2.TRRSジャックの取り付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3.リセットスイッチの取り付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4.スタビライザーの取り付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5.キースイッチの取り付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6promicro" class="md-nav__link">
+    6.ProMicroの取り付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    7.ケースの組み立て
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    8.お好きなキーキャップを取り付けて完成です
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ErgoDash_BuildGuide_cut/" class="md-nav__link">
+        ErgoDash 親指なし ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ErgoDash_Parts/" class="md-nav__link">
+        ErgoDash必要部品/必要工具
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
+          Navpad 10
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Navpad 10" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Navpad 10
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Navpad_10/readme/" class="md-nav__link">
+        Navpad 1.0 ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" tabindex="0" aria-expanded="false">
+          Formore
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Formore" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Formore
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Navpad_10/formore/acrylic_plate/" class="md-nav__link">
+        Navpad 1.0用『キーボードアクリルプレート』を使用する
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Navpad_10/formore/aluminum_feet/" class="md-nav__link">
+        チルト用 Aluminum feet セットを使用する
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Navpad_10/formore/connect_with/" class="md-nav__link">
+        Navpad 1.0をほかのキーボードと接続する<br />(上級者向けの改造)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Navpad_10/formore/readme/" class="md-nav__link">
+        Navpad 1.0をカスタマイズする
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
+          Primer16
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Primer16" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Primer16
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Primer16/readme/" class="md-nav__link">
+        Primer16 ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" tabindex="0" aria-expanded="false">
+          Primer79
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Primer79" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Primer79
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Primer79/readme/" class="md-nav__link">
+        Primer79 ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" tabindex="0" aria-expanded="false">
+          Quick17
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Quick17" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Quick17
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Quick17/readme/" class="md-nav__link">
+        Quick17 ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_2" tabindex="0" aria-expanded="false">
+          Hex
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Hex" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Hex
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Quick17/hex/readme/" class="md-nav__link">
+        Readme
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7" tabindex="0" aria-expanded="false">
+          Quick7
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Quick7" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Quick7
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Quick7/BuildGuide/" class="md-nav__link">
+        Quick7 ビルドガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Quick7/Buildguide-en/" class="md-nav__link">
+        Quick7 Buildguide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8" tabindex="0" aria-expanded="false">
+          Helix rev3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Helix rev3" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Helix rev3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../helix_rev3/BuildGuide_LP/" class="md-nav__link">
+        Helix rev3 LP 組み立てガイド
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../helix_rev3/ForMore/" class="md-nav__link">
+        上級者向けの各機能について
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../helix_rev3/TroubleShooting/" class="md-nav__link">
+        故障かな？とおもったら
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9" tabindex="0" aria-expanded="false">
+          Switch keychain kit
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Switch keychain kit" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Switch keychain kit
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../switch-keychain-kit/" class="md-nav__link">
+        Cherry MXキーチェーン のくみたてかた
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    はじめに
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1.ダイオードを取り付ける
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2trrs" class="md-nav__link">
+    2.TRRSジャックの取り付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3.リセットスイッチの取り付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4.スタビライザーの取り付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5.キースイッチの取り付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6promicro" class="md-nav__link">
+    6.ProMicroの取り付け
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    7.ケースの組み立て
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    8.お好きなキーキャップを取り付けて完成です
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ergodash">ErgoDash 親指ありビルドガイド</h1>
+<h3 id="_1">はじめに</h3>
+<p>このページのビルドガイドではオプション機能のUndergrow LEDの取り付けやバックライトLEDの取り付け手順を記載していません。<br />
+これらのLEDの取り付けをしたい場合は<a href="https://github.com/omkbd/ErgoDash/blob/master/Doc/build.md">本家のビルドガイド</a>を参照して組み立てを行ってください。<br />
+https://github.com/omkbd/ErgoDash/blob/master/Doc/build.md</p>
+<p>このビルドガイドでは親指ありのレイアウトの組み立てを行っています。
+親指なしの組み立ては以下のページを参照下さい。<br />
+<a href="../ErgoDash_BuildGuide_cut/">親指なしレイアウト ビルドガイド</a></p>
+<h2 id="1">1.ダイオードを取り付ける</h2>
+<p>使用部品:ダイオード<br />
+使用工具:ニッパー　はんだごて  </p>
+<p>アクリルケースを3枚重ね、10個程度でダイオードのリールをカットし、アクリルに押さえつけてダイオードを折り曲げます。  <br />
+<img alt="ergodash_diode1" src="../imgs/diode1.JPG" />
+ニッパーでカットするか手でリールからダイオードを外します。<br />
+小さい部品ですので紛失しないようにしてください。  <br />
+<img alt="ergodash_diode2" src="../imgs/diode2.JPG" />
+ダイオードの<strong>黒色を下向きにして</strong>画像のオレンジ色の場所に差し込みます。<br />
+親指周辺の向きに気をつけてください。  </p>
+<p><img alt="ergodash_diode" src="../imgs/diode3.jpg" />
+<img alt="ergodash_diode3" src="../imgs/ergodash_diode.png" /></p>
+<p>ダイオードをマスキングテープなどで固定するかリードを広げます。<br />
+基板を裏返してダイオードをはんだ付けします。<br />
+はんだが富士山のような形になるのが良いはんだ付けです。 <br />
+<img alt="ergodash_diode4" src="../imgs/diode4-2.jpg" /></p>
+<p>はんだ付け後、ニッパーでダイオードのリードの根本をカットします
+<img alt="ergodash_diode5" src="../imgs/diode5-2.jpg" />
+<img alt="ergodash_diode6" src="../imgs/diode6-2.jpg" /></p>
+<h2 id="2trrs">2.TRRSジャックの取り付け</h2>
+<p>使用部品:TRRSジャック<br />
+使用工具:はんだごて  </p>
+<p>内側上部の四角で囲まれている場所にTRRSジャックを<strong>ダイオードが付いている面</strong>に差し込みます。
+<img alt="ergodash_trrs" src="../imgs/ergodash_trrs.png" />
+<img alt="ergodash_trrs2" src="../imgs/trrs2.JPG" />
+基板を裏返してTRRSジャックをはんだ付けします。
+<img alt="ergodash_trrs2" src="../imgs/trrs3.JPG" /></p>
+<h2 id="3">3.リセットスイッチの取り付け</h2>
+<p>使用部品:リセットスイッチ<br />
+使用工具:はんだごて  </p>
+<p>オレンジに囲まれた場所にリセットスイッチを取り付けます。
+<img alt="ergodash_rsw" src="../imgs/ergodash_rsw.png" />
+×が記載されている場所には差し込まないように注意して下さい。<br />
+正しく差し込まれていればリセットスイッチの左隣に"TX0"の文字が記載されています
+<img alt="ergodash_rsw2" src="../imgs/rsw2.jpg" /></p>
+<p><strong>これ以降の工程では後からの修正が難しくなるため、以下のチェックリストを確認してください</strong></p>
+<ul>
+<li>ダイオード、TRRSジャック、リセットスイッチが同じ面に取り付けられている</li>
+<li>ダイオードが両手70個(68個)取り付けられている</li>
+<li>すべてはんだ付けされている</li>
+<li>ダイオードの黒いマークが下向きになっている</li>
+<li>リセットスイッチの左隣にTX0の印字がある</li>
+</ul>
+<h2 id="4">4.スタビライザーの取り付け</h2>
+<p>使用部品:スタビライザー<br />
+使用工具:なし  </p>
+<p><strong>2Uサイズ(大きいサイズ)のキーキャップを使用する場合</strong>はスタビライザーを取り付けます。<br />
+必須部品ではありませんが取り付けを推奨しています。</p>
+<p>取り付け前に正しく動作するかを確認します。<br />
+スタビライザーを動かして十字の部品が2つとも上まで動き上がっていること、針金の端が上げたときに見えることを確認して下さい。
+<img alt="ergodash_stabilizer1" src="../imgs/stabilizer1.jpg" /></p>
+<p>大きい方の穴にスタビライザーのプラスチックの爪を斜めに引っ掛けてから反対の小さい穴に差し込みます。
+<img alt="ergodash_stabilizer2" src="../imgs/stabilizer2.JPG" />
+<img alt="ergodash_stabilizer3" src="../imgs/stabilizer3.JPG" /></p>
+<p>正しく取り付けられているか確認してください。
+<img alt="ergodash_stabilizer4" src="../imgs/stabilizer4.JPG" /></p>
+<h2 id="5">5.キースイッチの取り付け</h2>
+<p>使用部品:キースイッチ 5mmねじ(短い方) 6mmスペーサー<br />
+使用工具:はんだごて  ドライバー</p>
+<p>アクリルのトッププレートのフィルムを剥がします。
+<img alt="ergodash_plate1" src="../imgs/plate1.JPG" /></p>
+<p>5mmねじ(短い方)と6mmスペーサーを取り出し、プレートに固定します。
+<img alt="ergodash_plate2" src="../imgs/plate2.JPG" />
+<img alt="ergodash_plate3" src="../imgs/plate3.JPG" /></p>
+<p>【積層アクリル版】外側にネジ止めします
+<img alt="ergodash_Laminate1" src="../imgs/Laminate1.jpg" />
+プレート四隅にスイッチを差し込んでから基板にまっすぐ差し込みます。
+<img alt="ergodash_SW1" src="../imgs/SW1.JPG" />
+<img alt="ergodash_SW2" src="../imgs/SW2.JPG" />
+浮きがないように確認し、基板を裏返しスイッチをはんだ付けして固定します。
+<img alt="ergodash_SW3" src="imgs/SW3.JPG" />
+<img alt="ergodash_SW4" src="../imgs/SW4.JPG" /></p>
+<p>残りのスイッチをしっかりと差し込み、浮きや斜めになってないかを確認してからはんだ付けします。
+<img alt="ergodash_SW5" src="../imgs/SW5.JPG" />
+<img alt="ergodash_SW6" src="../imgs/SW6.JPG" /></p>
+<h2 id="6promicro">6.ProMicroの取り付け</h2>
+<p>使用部品:ProMicro コンスルー(スプリングピンヘッダ)
+使用工具:はんだごて  ニッパー</p>
+<p>破損時や故障時に交換可能にするため<strong>ProMicroの袋に同封しているピンヘッダは使用しないでください。(使用しないため廃棄しても構いません)</strong><br />
+別袋に同封されているコンスルーを使用します。<br />
+<img alt="ergodash_promicro1" src="../imgs/promicro1.jpg" /></p>
+<p>ProMicroの下側にあるスイッチのピンをカットします。<br />
+画像の水色で囲まれている箇所の基板から飛び出しているピンをカットします。<br />
+カットしない場合スイッチのピンでProMicroがショートし動作不良や故障などが発生する可能性があります。
+<img alt="ergodash_promicro2" src="../imgs/ergodash_promicro2.png" />
+<img alt="ergodash_promicro3" src="../imgs/promicro3.JPG" /></p>
+<p>コンスルーには取り付けの推奨の向きがあります。<br />
+コンスルー側面の金色が見えている方を上側(ProMicro側)にし、左右向きを揃えて差し込みます。<br />
+<img alt="ergodash_promicro4" src="../imgs/promicro4.jpg" /></p>
+<p>ProMicroの部品がついている方を下向きにして押し込みます。<br />
+<img alt="ergodash_promicro5" src="../imgs/promicro5.JPG" />
+ProMicro側のピンのみをはんだ付けします。
+<img alt="ergodash_promicro6" src="../imgs/promicro6.jpg" /><br />
+<img alt="ergodash_promicro7" src="../imgs/promicro7.JPG" /></p>
+<h2 id="7">7.ケースの組み立て</h2>
+<p>使用部品:ボトムプレート 5mmねじ(短い方)　8mmねじ(長い方) ゴム足<br />
+使用工具:精密ドライバー</p>
+<p>ボトムプレートとProMicroカバーを取り出し保護紙を剥がします。
+<img alt="ergodash_plate4" src="../imgs/plate4.JPG" />
+裏側から重ね合わせてネジ止めをします。<br />
+場所によって使うねじの長さが異なります。画像を参照し取り付けを行ってください。
+<img alt="ergodash_plate5" src="../imgs/plate5.JPG" /></p>
+<p>【積層アクリル版】ミドルパーツがありますので、図の向きで2つずつスペーサーに嵌めていきます。
+<img alt="ergodash_Laminate5" src="../imgs/Laminate5.jpg" />
+<img alt="ergodash_Laminate2" src="../imgs/Laminate2.jpg" />
+<img alt="ergodash_Laminate3" src="../imgs/Laminate3.jpg" />
+【積層アクリル版】ボトムプレートを乗せネジ止めします。場所によって使うねじの長さが異なります。画像を参照し取り付けを行ってください。
+<img alt="ergodash_Laminate4" src="../imgs/Laminate4.jpg" /></p>
+<p>ゴム足を底面四隅に貼り付けます。
+<img alt="ergodash_plate6" src="../imgs/plate6.JPG" /></p>
+<h2 id="8">8.お好きなキーキャップを取り付けて完成です</h2>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2023 遊舎工房
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  </body>
+</html>
